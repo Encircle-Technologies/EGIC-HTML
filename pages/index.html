@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Euro-Gulf Information Center</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/manifest.json">
+    
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/iwh2bvy.css">
+    <!-- Main custom css -->
+    <link href="../assets/css/dist/style.css" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+</head>
+
+<body class="home">
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="top-bar bg-blue-gradient">
+            <div class="relative py-20 w-full px-10">
+                <div class="w-full text-White text-center">
+                    <p class="block xlscreen:hidden">This is the first example of a sitewide notice, which is used to display messages or announcements to your website’s visitors.
+                    </p>
+                    <p class="hidden xlscreen:block">This is the first example of a sitewide notice.</p>
+                    <button class="announcement-close xlscreen:hidden bg-transparent border-0 cursor-pointer absolute top-50_per translate-y-minus_50 right-55 p-10">
+                        <img src="../assets/images/close-x.svg" width="15" height="15" class="w-15 h-15" alt="close">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom relative z-9">
+            <div class="container-fluid">
+                <div class="navbar-main flex flex-wrap justify-between items-center w-full py-14 lg:px-55 xlscreen:px-0">
+                    <button class="navbar-toggler bg-transparent border-0 hidden xlscreen:flex xlscreen:flex-col gap-y-[3px] lg:hidden p-0" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="logo mb-minus-50 xlscreen:mb-0">
+                        <a href="index.html" class="bg-White p-20 block shadow-cardshadow xlscreen:py-18 xlscreen:px-28 xlscreen:py-28">
+                            <img src="../assets/images/logo.png" width="150" height="150" alt="EGIC" class="xlscreen:w-84 xlscreen:h-84">
+                        </a>
+                    </div>
+                    <div class="navbar xlscreen:hidden">
+                        <div class="mobile-search-bar py-20 px-80 bg-blue relative w-full hidden xlscreen:px-20">
+                            <div class="flex items-center w-full">
+                                <form class="w-full bg-White flex items-center">
+                                    <img src="../assets/images/search-icon.svg" alt="search-icon" class="relative left-20">
+                                    <input type="text" id="search" name="search" placeholder="Search..." class=" text-16 leading-26 text-black-200 w-full py-10 px-[45px] border-0 placeholder:text-black-200 placeholder:text-16">
+                                    <a href="javascript:void(0);" class="block relative right-20 search-btn-close">
+                                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.87423 8.01266L14.7149 2.17178C15.095 1.79185 15.095 1.17756 14.7149 0.797639C14.335 0.417714 13.7207 0.417714 13.3408 0.797639L7.49992 6.63852L1.65921 0.797639C1.27911 0.417714 0.665002 0.417714 0.285077 0.797639C-0.0950257 1.17756 -0.0950257 1.79185 0.285077 2.17178L6.12578 8.01266L0.285077 13.8535C-0.0950257 14.2335 -0.0950257 14.8477 0.285077 15.2277C0.474417 15.4172 0.72337 15.5124 0.972145 15.5124C1.22092 15.5124 1.4697 15.4172 1.65921 15.2277L7.49992 9.38679L13.3408 15.2277C13.5303 15.4172 13.7791 15.5124 14.0279 15.5124C14.2766 15.5124 14.5254 15.4172 14.7149 15.2277C15.095 14.8477 15.095 14.2335 14.7149 13.8535L8.87423 8.01266Z" fill="
+                                            #033A72"/>
+                                        </svg>                                
+                                    </a>
+                                </form>
+                            </div>
+                        </div>                
+                        <div id="main-menu" class="mobile-menu-main">
+                            <ul class="items-center gap-55 laptop:gap-25 flex flex-wrap justify-center m-0">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-87">
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                    <ul class="flex flex-wrap sub-menu">
+                                        <div class="megamenu-main">
+                                            <div class="megamenu-main__inner tabs-wrapper">
+                                                <div class="megamenu-tab grid grid-cols-3 tab-wrapper">
+                                                    <div class="megamenu-tab--list">
+                                                        <ul class="tabs">
+                                                            <li class="tab-link current" data-tab="tab-1"><a href="#">Programs Overview</a></li>
+                                                            <li class="tab-link" data-tab="tab-2"><a href="#">Specialty Programs</a></li>  
+                                                        </ul>    
+                                                    </div> 
+                                                    <div class="tab-content-main tabs-container col-span-2">
+                                                        <div id="tab-1" class="tab-content current">
+                                                            <div class="megamenu-tab--content"> 
+                                                                <div class="row">
+                                                                    <div class="lg:w-6/12">
+                                                                        <div class="megamenu-menu">
+                                                                            <div class="megamenu-menu__title title_white">
+                                                                                <h3>Programs Overview</h3>
+                                                                            </div>
+                                                                            <div class="megamenu-menu-items">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <a href="#">Detox</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#">Inpatient/Residential</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#">Outpatient PHP</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#">Aftercare</a> 
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="lg:w-6/12">
+                                                                        <div class="megamenu-content-image">
+                                                                            <!-- <div class="megamenu-content-image__inner">
+                                                                                <img src="../assets/images/megamenu-image-1.png" alt="megamenu-image">
+                                                                            </div> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-2" class="tab-content">
+                                                            <div class="megamenu-tab--content"> 
+                                                                <div class="row">
+                                                                    <div class="lg:w-6/12">
+                                                                        <div class="megamenu-menu">
+                                                                            <div class="megamenu-menu__title title_white">
+                                                                                <h3>Specialty Programs</h3>
+                                                                            </div>
+                                                                            <div class="megamenu-menu-items">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <a href="#">Trauma Program</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#">Long-term Trauma</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#">Faith-based Program</a>
+                                                                                    </li>   
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="lg:w-6/12">
+                                                                        <div class="megamenu-content-image">
+                                                                            <!-- <div class="megamenu-content-image__inner">
+                                                                                <img src="../assets/images/megamenu-image-1.png" alt="megamenu-image">
+                                                                            </div> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </ul>                      
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Publications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        The Euro-Gulf Daily Post
+                                    </a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="#">Infographics</a>                                    
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>                                    
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="h-right-part hidden xlscreen:block">
+                        <div class="contact-number ">
+                            <a href="tel:689569893" class="flex items-center gap-8 text-16 leading-26 text-blue font-700 hover:text-yellow">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6637 12.354L12.3472 10.0373C11.8858 9.57772 11.1217 9.59168 10.6442 10.0693L9.47714 11.2361C9.40341 11.1955 9.32709 11.1531 9.24685 11.108C8.50986 10.6997 7.50116 10.14 6.43971 9.07774C5.37512 8.01328 4.8149 7.00303 4.40529 6.26556C4.36207 6.18743 4.32065 6.11211 4.27976 6.04057L5.06303 5.25846L5.44812 4.8729C5.92633 4.39455 5.93952 3.63067 5.47919 3.16978L3.16268 0.852752C2.70235 0.392509 1.93791 0.406471 1.45969 0.884814L0.806819 1.54144L0.82466 1.55915C0.605743 1.83848 0.422809 2.16065 0.286676 2.50808C0.161186 2.83878 0.083057 3.15435 0.0473321 3.47058C-0.258548 6.0064 0.900247 8.32394 4.04507 11.4688C8.39217 15.8156 11.8954 15.4872 12.0465 15.4712C12.3756 15.4319 12.6911 15.3532 13.0117 15.2287C13.3561 15.0942 13.678 14.9115 13.9572 14.6931L13.9714 14.7057L14.6329 14.0581C15.1101 13.5798 15.1238 12.8157 14.6637 12.354Z" fill="#033A72"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-right-part flex items-center gap-40 xlscreen:hidden">
+                        <div class="contact-number">
+                            <a href="tel:689569893" class="flex items-center gap-8 text-16 leading-26 text-blue font-700 hover:text-yellow">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6637 12.354L12.3472 10.0373C11.8858 9.57772 11.1217 9.59168 10.6442 10.0693L9.47714 11.2361C9.40341 11.1955 9.32709 11.1531 9.24685 11.108C8.50986 10.6997 7.50116 10.14 6.43971 9.07774C5.37512 8.01328 4.8149 7.00303 4.40529 6.26556C4.36207 6.18743 4.32065 6.11211 4.27976 6.04057L5.06303 5.25846L5.44812 4.8729C5.92633 4.39455 5.93952 3.63067 5.47919 3.16978L3.16268 0.852752C2.70235 0.392509 1.93791 0.406471 1.45969 0.884814L0.806819 1.54144L0.82466 1.55915C0.605743 1.83848 0.422809 2.16065 0.286676 2.50808C0.161186 2.83878 0.083057 3.15435 0.0473321 3.47058C-0.258548 6.0064 0.900247 8.32394 4.04507 11.4688C8.39217 15.8156 11.8954 15.4872 12.0465 15.4712C12.3756 15.4319 12.6911 15.3532 13.0117 15.2287C13.3561 15.0942 13.678 14.9115 13.9572 14.6931L13.9714 14.7057L14.6329 14.0581C15.1101 13.5798 15.1238 12.8157 14.6637 12.354Z" fill="#033A72"/>
+                                </svg>                                    
+                                +39 689569893
+                            </a>
+                        </div>
+                        <div class="search">
+                            <a href="javascript:void(0);" class="btn-search">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4672 12.3204L11.9984 9.85162C12.4473 8.95386 12.7465 7.90648 12.7465 6.8591C12.7465 3.34289 9.90363 0.5 6.38742 0.5C2.87121 0.5 0.0283203 3.34289 0.0283203 6.8591C0.0283203 10.3753 2.87121 13.2182 6.38742 13.2182C7.4348 13.2182 8.48218 12.919 9.37994 12.4701L11.8488 14.9389C12.5969 15.687 13.7191 15.687 14.4672 14.9389C15.1405 14.1908 15.1405 13.0686 14.4672 12.3204ZM6.38742 11.7219C3.69415 11.7219 1.52458 9.55237 1.52458 6.8591C1.52458 4.16584 3.69415 1.99626 6.38742 1.99626C9.08069 1.99626 11.2503 4.16584 11.2503 6.8591C11.2503 9.55237 9.08069 11.7219 6.38742 11.7219Z" fill="#033A72"/>
+                                </svg>
+                            </a>            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="search-bar hidden py-20 px-80 bg-blue absolute w-full top-190 z-9">
+                <div class="flex items-center w-full">
+                    <form class="w-full bg-White flex items-center">
+                        <img src="../assets/images/search-icon.svg" alt="search-icon" class="relative left-20">
+                        <input type="text" id="search" name="search" placeholder="Search..." class=" text-16 leading-26 text-black-200 w-full py-10 px-[45px] border-0 placeholder:text-black-200 placeholder:text-16">
+                        <a href="javascript:void(0);" class="block relative right-20 search-btn-close">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.87423 8.01266L14.7149 2.17178C15.095 1.79185 15.095 1.17756 14.7149 0.797639C14.335 0.417714 13.7207 0.417714 13.3408 0.797639L7.49992 6.63852L1.65921 0.797639C1.27911 0.417714 0.665002 0.417714 0.285077 0.797639C-0.0950257 1.17756 -0.0950257 1.79185 0.285077 2.17178L6.12578 8.01266L0.285077 13.8535C-0.0950257 14.2335 -0.0950257 14.8477 0.285077 15.2277C0.474417 15.4172 0.72337 15.5124 0.972145 15.5124C1.22092 15.5124 1.4697 15.4172 1.65921 15.2277L7.49992 9.38679L13.3408 15.2277C13.5303 15.4172 13.7791 15.5124 14.0279 15.5124C14.2766 15.5124 14.5254 15.4172 14.7149 15.2277C15.095 14.8477 15.095 14.2335 14.7149 13.8535L8.87423 8.01266Z" fill="
+                                #033A72"/>
+                            </svg>                                
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="banner-wrp">
+        <div class="banner-main">
+            <div class="banner-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner-inner-content">
+                            <div class="banner-image relaitve">
+                                <img src="../assets/images/banner-image.jpg" alt="banner-image" class="w-full h-heroHeight xlscreen:h-mobileHeight object-cover">
+                            </div>
+                            <div class="banner-content absolute top-50_per left-[-2px] translate-y-minus_50 w-full xlscreen:relative xlscreen:top-0 xlscreen:left-0 xlscreen:transform-none xlscreen:text-center xlscreen:pb-[50px]">
+                                <div class="container-fluid">
+                                    <div class="banner-inner-content flex flex-col max-w-[700px] w-full pl-140 xlscreen:pl-0 xlscreen:mx-auto">
+                                        <div class="title title-blue">
+                                            <h2>Assisting Europe and the Gulf Cooperation Council</h2>
+                                        </div>
+                                        <div class="banner-btn pt-20">
+                                            <a href="javascript:void(0);" class="btn btn-purple">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="swiper-slide">
+                        <div class="banner-inner-content right-content">
+                            <div class="banner-image relaitve">
+                                <img src="../assets/images/banner-image-2.jpg" alt="banner-image" class="w-full h-heroHeight xlscreen:h-mobileHeight object-cover">
+                            </div>
+                            <div class="banner-content absolute top-50_per left-0 translate-y-minus_50 w-full xlscreen:relative xlscreen:top-0 xlscreen:left-0 xlscreen:transform-none xlscreen:text-center xlscreen:pb-[50px]">
+                                <div class="container-fluid">
+                                    <div class="banner-inner-content flex flex-col max-w-[700px] w-full pl-140 xlscreen:pl-0 xlscreen:mx-auto xlscreen:!pr-0">
+                                        <div class="title title-blue">
+                                            <h2>Building Bridges For The Arabian Gulf & People Of Europe</h2>
+                                        </div>
+                                        <div class="banner-btn pt-20">
+                                            <a href="javascript:void(0);" class="btn btn-purple">Inform Yourself</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-inner-content">
+                            <div class="banner-image relaitve">
+                                <img src="../assets/images/banner-image-3.jpg" alt="banner-image" class="w-full h-heroHeight xlscreen:h-mobileHeight object-cover">
+                            </div>
+                            <div class="banner-content absolute top-50_per left-0 translate-y-minus_50 w-full xlscreen:relative xlscreen:top-0 xlscreen:left-0 xlscreen:transform-none xlscreen:text-center xlscreen:pb-[50px]">
+                                <div class="container-fluid">
+                                    <div class="banner-inner-content flex flex-col max-w-[700px] w-full pl-140 xlscreen:pl-0">
+                                        <div class="title title-blue">
+                                            <h2>Since 2015, EGIC Has Provided Foreign Policy Issue Insights</h2>
+                                        </div>
+                                        <div class="banner-btn pt-20">
+                                            <a href="javascript:void(0);" class="btn btn-purple">Begin Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="banner-slider-arrow xlscreen:relative xlscreen:flex xlscreen:items-center">
+                    <div class="swiper-button-next absolute top- right-80 w-40 h-40 after:!hidden bg-blue-gradient rounded-50 top-2/4 transform -translate-y-1/2 xlscreen:relative xlscreen:top-0 xlscreen:transform-[none] xlscreen:right-auto xlscreen:left-50_per xlscreen:translate-x-[20%] xlscreen:bg-none">
+                        <img src="../assets/images/next-arrow.svg" alt="arrow" class="block xlscreen:hidden">
+                        <img src="../assets/images/mobile-right-arrow.svg" alt="arrow" class="hidden xlscreen:block">
+                    </div>
+                    <div class="swiper-button-prev absolute left-80 w-40 h-40 after:!hidden bg-blue-gradient rounded-50 top-2/4 transform -translate-y-1/2 xlscreen:top-0 xlscreen:transform-[none] xlscreen:right-auto xlscreen:left-50_per xlscreen:translate-x-[-120%] xlscreen:bg-none">
+                        <img src="../assets/images/prev-arrow.svg" alt="arrow" class="block xlscreen:hidden">
+                        <img src="../assets/images/mobile-left-arrow.svg" alt="arrow" class="hidden xlscreen:block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- icon block start -->
+    <section class="icon-block-wrp py-100">
+        <div class="container-fluid">
+            <div class="icon-block-main">
+                <div class="title title-blue text-center">
+                    <h3>Our Initiatives</h3>
+                </div>
+                <div class="icon-block-bottom flex items-center flex-wrap gap-55 pt-40 justify-between max-w-[1352px] w-full mx-auto xlscreen:justify-center">
+                    <div class="icon-block-inner flex items-center flex-col justify-center cursor-pointer">
+                        <div class="image bg-blue-gradient w-126 h-126 flex items-center justify-center rounded-50 mdscreen:w-[95px] mdscreen:h-[95px]">
+                            <img src="../assets/images/icon-1.svg" alt="Security & Politics" class="mdscreen:max-w-55 mdscreen:mx-auto">
+                        </div>
+                        <div class="detail pt-20 title-grey">
+                            <h4 class="sub">Security & Politics</h4>
+                        </div>
+                        <div class="hover-detail text-center max-w-[347px] w-full mx-auto">
+                            <div class="detail pt-10">
+                                <p>Detailed informative accounts on trending topics.</p>
+                            </div>
+                            <div class="i-btn pt-10">
+                                <a href="javascript:void(0);" class="btn btn-purple">Go Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-block-inner flex items-center flex-col justify-center cursor-pointer">
+                        <div class="image bg-blue-gradient w-126 h-126 flex items-center justify-center rounded-50 mdscreen:w-[95px] mdscreen:h-[95px]">
+                            <img src="../assets/images/icon-2.svg" alt="Security & Politics" class="mdscreen:max-w-55 mdscreen:mx-auto">
+                        </div>
+                        <div class="detail pt-20 title-grey">
+                            <h4 class="sub">Trade & Economics</h4>
+                        </div>
+                        <div class="hover-detail text-center max-w-[347px] w-full mx-auto">
+                            <div class="detail pt-10">
+                                <p>Our analyses provide useful insights on foreign policy issues.</p>
+                            </div>
+                            <div class="i-btn pt-10">
+                                <a href="javascript:void(0);" class="btn btn-purple">Go Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-block-inner flex items-center flex-col justify-center cursor-pointer">
+                        <div class="image bg-blue-gradient w-126 h-126 flex items-center justify-center rounded-50 mdscreen:w-[95px] mdscreen:h-[95px]">
+                            <img src="../assets/images/icon-3.svg" alt="Security & Politics" class="mdscreen:max-w-55 mdscreen:mx-auto">
+                        </div>
+                        <div class="detail pt-20 title-grey">
+                            <h4 class="sub">Society & Culture</h4>
+                        </div>
+                        <div class="hover-detail text-center max-w-[347px] w-full mx-auto">
+                            <div class="detail pt-10">
+                                <p>Daily updates on news and topics affecting the Gulf Region.</p>
+                            </div>
+                            <div class="i-btn pt-10">
+                                <a href="javascript:void(0);" class="btn btn-purple">Go Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- icon block end -->
+
+    <!-- Full img content start -->
+    <section class="img-content-bx">
+        <div class="img-content-main-block relative py-40">
+            <!-- <div class="img-content-main-block bg-cover py-40 px-80 mdscreen:p-28"></div> -->
+            <div class="absolute top-0 left-0 w-full h-full">
+                <img src="../assets/images/full-image.jpg" alt="background-image" class="max-lg:hidden w-full h-full object-cover absolute inset-0">
+                <img src="../assets/images/mobile-full-img.jpg" alt="background-image" class="lg:hidden w-full h-full object-cover absolute inset-0">
+            </div>
+            <div class="container-fluid">
+                <div class="full-image-main flex flex-col justify-center items-end">
+                    <div class=" h-full max-w-[682px] w-full pattern-bg purple-bg">
+                        <div class="text-block relative z-1">
+                            <div class="title title-white pb-10">
+                                <h3>About EGIC</h3>
+                            </div>
+                            <div class="detail title-white pl-28 line-cmn relative mt-20">
+                                <p>The Euro-Gulf Information Centre blends research and analyses with outreach and engagement. We are proud of being an action centre that contributes to enhancing strategic, cultural, economic and political ties in the Euro-Gulf space. Through specialised platforms, programmes and activities, EGIC works hard to develop human-to-human and institution-to-institution contact points in order to strengthen relations and constructive engagement.</p>
+                                <p>EGIC also provides information services to organisations and individuals that seek to deepen their understanding of the trends unfolding in both Europe and the Gulf. EGIC is a firm believer in breaking paywalls and provides <span>OPEN ACCESS</span> information -- infographics, articles, reports (etc) -- to the interested public. Finally, EGIC organises a wide assortment of <span>EVENTS</span> ranging from conference and seminars to workshops, art exhibitions, travels and specialised training.</p>
+                                <p>EGIC is Headquartered in Rome, Italy.</p>
+                            </div>
+                            <div class="image-btn pt-20">
+                                <a href="#" class="btn btn-blue">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:hidden relative pt-[calc(9/16*100%)] w-full block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Full img content End -->
+
+    <!-- content-with-grid Start -->
+    <section class="py-100 mdscreen:py-80">
+        <div class="container-fluid">
+            <div class="flex items-center gap-55 justify-between xlscreen:flex-wrap xlscreen:justify-center">
+                <div class="max-w-[557px] w-full pattern-bg blue-bg">
+                    <div class="text-blue-block relative z-1">
+                        <div class="title title-white pb-10">
+                            <h3>Gulf Cooperation Council Updates</h3>
+                        </div>
+                        <div class="detail title-white pl-28 line-cmn relative mt-20">
+                            <p>Over the past years, the countries of the Gulf Cooperation Council (GCC) have worked to enhance their <span>diplomatic ties</span> to the rest of the world and have, within that context, undertaken a number of <span>initiatives</span> that have the propensity to benefit all. The Euro-Gulf Monitor records such dynamics and presents, weekly, those that most acutely affect <span>relations</span> between <span>Europe</span> and the <span>GCC</span>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid-block-main flex flex-col gap-y-55 w-full">
+                    <div class="c-block max-w-[520px] xxl:max-w-full xxl:w-8/12 w-full lg:mr-auto">
+                        <div class="content-image relative pt-[53.95%] mdscreen:pt-[63.95%]">
+                            <div class="img absolute inset-0">
+                                <img src="../assets/images/gulf-history-portal.jpg" alt="Gulf History
+                                Portal" class="w-full h-full object-cover shadow-cardshadow">
+                            </div>
+                        </div>
+                        <div class="title title-grey line relative pl-28 max-w-[300px] w-full mt-20 mdscreen:pl-20">
+                            <h4>Gulf History
+                                Portal</h4>
+                        </div>
+                        <div class="content-btn pt-20">
+                            <a href="#" class="btn btn-red">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="c-block max-w-[520px] xxl:max-w-full xxl:w-8/12 w-full lg:ml-auto">
+                        <div class="content-image relative pt-[53.95%] mdscreen:pt-[63.95%]">
+                            <div class="img absolute inset-0">
+                                <img src="../assets/images/weekly-gulf-monitor.jpg" alt="Weekly Euro-Gulf Monitor" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="title title-grey line line-green relative pl-28 max-w-[300px] w-full mt-20  mdscreen:pl-20">
+                            <h4>Weekly Euro-Gulf Monitor</h4>
+                        </div>
+                        <div class="content-btn pt-20">
+                            <a href="#" class="btn btn-red">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="c-block max-w-[520px] xxl:max-w-full xxl:w-8/12 w-full lg:mr-auto">
+                        <div class="content-image relative pt-[53.95%] mdscreen:pt-[63.95%]">
+                            <div class="img absolute inset-0">
+                                <img src="../assets/images/strategic-monthly.jpg" alt="Strategic
+                                Monthly" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="title title-grey line line-blue relative pl-28 max-w-[300px] w-full mt-20 mdscreen:pl-20">
+                            <h4>Strategic
+                                Monthly</h4>
+                        </div>
+                        <div class="content-btn pt-20">
+                            <a href="#" class="btn btn-red">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content-with-grid End -->
+
+    <!-- map section Start -->
+    <section class="py-40 mdscreen:overflow-hidden">
+        <div class="container-fluid">
+            <div class="grid grid-cols-2 grid-flow-col items-center gap-100 laptop:px-20 xlscreen:grid-cols-1 xlscreen:flex xlscreen:flex-col-reverse mdscreen:px-0">
+                <div class="w-full flex items-center justify-center relative">
+                    <div class="default-img mx-auto relative">
+                        <img src="../assets/images/map-img.svg" alt="map-image" class="mdscreen:hidden">
+                        <img src="../assets/images/mobile-map.svg" alt="map-image" class="hidden mdscreen:block">
+                        <div class="hover-detail opacity-0">
+                            <div class="country-part kuwait absolute">
+                                <div class="bottom-detail relative left-[-40px] mdscreen:left-[-70px]">
+                                    <div class="title title-grey pb-10">
+                                        <h4>Kuwait</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="line-dot relative">
+                                    <img src="../assets/images/kuwait-line.svg" alt="kuwait" class="mdscreen:hidden">
+                                    <img src="../assets/images/kuwait-mobile-line.svg" alt="kuwait" class="hidden mdscreen:block">
+                                </div>
+                            </div>
+
+                            <div class="country-part bahrain absolute">
+                                <div class="bottom-detail relative left-[-10px] mdscreen:left-[-30px]">
+                                    <div class="title title-grey pb-10">
+                                        <h4>Bahrain</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="line-dot relative">
+                                    <img src="../assets/images/bahrain-line.svg" alt="Bahrain" class="mdscreen:hidden">
+                                    <img src="../assets/images/bahrain-mobile-line.svg" alt="bahrain" class="hidden mdscreen:block">
+                                </div>
+                            </div>
+
+                            <div class="country-part uae absolute">
+                                <div class="bottom-detail relative left-[60px] mdscreen:left-[10px] laptop:left-[40px]">
+                                    <div class="title title-grey pb-10">
+                                        <h4>UAE</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="line-dot line-dot-curve relative">
+                                    <img src="../assets/images/uae-line.svg" alt="UAE" class="mdscreen:hidden">
+                                    <img src="../assets/images/uae-mobile-line.svg" alt="" class="hidden mdscreen:block">
+                                </div>
+                            </div>
+
+                            <div class="country-part oman absolute">
+                                <div class="line-dot line-bottom relative">
+                                    <img src="../assets/images/oman-line.svg" alt="Oman" class="mdscreen:hidden">
+                                    <img src="../assets/images/oman-mobile-line.svg" alt="Oman" class="hidden mdscreen:block">
+                                </div>
+                                <div class="bottom-detail relative left-[-26px] top-10">
+                                    <div class="title title-grey pb-10">
+                                        <h4>Oman</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="country-part qatar absolute">
+                                <div class="line-dot line-bottom relative">
+                                    <img src="../assets/images/qatar-line.svg" alt="Qatar" class="mdscreen:hidden">
+                                    <img src="../assets/images/qatar-mobile-line.svg" alt="Qatar" class="hidden mdscreen:block">
+                                </div>
+                                <div class="bottom-detail relative left-[-56px] top-10">
+                                    <div class="title title-grey pb-10">
+                                        <h4>Qatar</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>                                
+                            </div>
+
+                            <div class="country-part saudi absolute  flex items-center flex-row-reverse">
+                                <div class="line-dot line-bottom relative">
+                                    <img src="../assets/images/saudi-arabia.svg" alt="Saudi Arabia" class="mdscreen:hidden">
+                                    <img src="../assets/images/saudi-arabia-mobile-line.svg" alt="saudi-arabia" class="hidden mdscreen:block">
+                                </div>
+                                <div class="bottom-detail relative top-80 left-[-14px] mdscreen:left-[10px] laptop:top-[120px] laptop:left-[56px]">
+                                    <div class="title title-grey pb-10 max-w-[137px] w-full">
+                                        <h4>Saudi Arabia</h4>
+                                    </div>
+                                    <div class="country-link relative inline-block mb-10">
+                                        <a href="#" class="text-16 leading-28 text-purple font-700">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[558px] w-full mx-auto">
+                    <div class=" h-full pattern-bg purple-bg">
+                        <div class="text-block relative z-1">
+                            <div class="title title-white pb-10">
+                                <h3>Gulf Cooperation Council Country Profiles</h3>
+                            </div>
+                            <div class="detail title-white pl-28 line-cmn relative mt-20">
+                                <p>The GCC countries are all <span>hereditary monarchies</span> though they each retain a dynamic political space. It is interesting to explore how their parliaments <span>operate</span>, <span>societies are configured, laws are passed</span> and <span>economies function</span>. These overviews present some key similarities and differences that exist among them and highlight important milestones.</p>
+                            </div>
+                            <div class="image-btn pt-20">
+                                <a href="#" class="btn btn-blue">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- map section End -->
+
+    <!-- follow section -->
+    <section class="follow-wrp py-80">
+        <div class="container-fluid">
+            <div class="follow-main">
+                <div class="follow-title text-center">
+                    <div class="title title-blue">
+                        <h3>FOLLOW US ON INSTAGRAM</h3>
+                    </div>
+                    <div class="f-link">
+                        <a href="#" class="text-24 leading-28 font-700 text-purple uppercase font-Luloclean mt-10 inline-block">@egic_info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- follow section -->
+
+    <!-- footer Start -->
+    <footer class="footer bg-blue-gradient relative py-80 ipad:py-[48px]">
+        <div class="container-fluid">
+            <div class="footer-main flex items-center justify-between gap-[280px] relative z-1 desktop:gap-[140px] ipad:flex-col ipad:gap-55 xlscreen:gap-40">
+                <div class="footer-left">
+                    <div class="title title-white ipad:text-center">
+                        <h3>
+                            Join Our Mailing List
+                            <span>& Never Miss An Update!</span>
+                        </h3>
+                    </div>
+                    <div class="footer-subscribe flex items-center gap-[10px] mt-20 ipad:flex-col">
+                        <input type="text" placeholder="Email Address" class="max-w-[521px] w-full py-[13px] px-20">
+                        <button type="submit" class="btn btn-purple">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-menu">
+                        <ul class="flex items-center gap-[80px] xlscreen:gap-[50px] ipad:gap-[22px]">
+                            <li>
+                                <a href="#" class="text-White text-16 leading-26 font-700">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-White text-16 leading-26 font-700">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-White text-16 leading-26 font-700">EGIC Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-media pt-[28px]">
+                        <ul class="flex items-center gap-25">
+                            <li>
+                                <a href="#" target="_blank" class="text-White bg-purple-gradient rounded-50 w-40 h-40 flex items-center justify-center text-30">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-White bg-purple-gradient rounded-50 w-40 h-40 flex items-center justify-center text-30">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-White bg-purple-gradient rounded-50 w-40 h-40 flex items-center justify-center text-30">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-White bg-purple-gradient rounded-50 w-40 h-40 flex items-center justify-center text-30">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-White bg-purple-gradient rounded-50 w-40 h-40 flex items-center justify-center text-30">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-copy flex items-center pt-[28px] ipad:justify-center ipad:flex-col">
+                        <div class="footer-copy-text relative pr-20 text-White ipad:after:hidden">
+                            <p>&copy; Euro-Gulf Information Centre</p>
+                        </div>
+                        <div class="footer-img ipad:pt-20">
+                            <a href="https://techyscouts.com/" class="techyscouts-credit-link block ml-20 ipad:ml-0" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 0 3700 552" id="techyscouts-logo" aria-labelledby="techyscouts-logo-title" role="img"> <title id="techyscouts-logo-title">Made with love by TechyScouts</title> <path id="techyscouts-logo-heart" style="transform-origin: 10% 50%;" d="M436 257L255 427 73 257a81 81 0 0 1-25-62c0-23 4-42 22-59 17-15 38-23 62-23 23 0 45 14 61 29l62 54 62-54c16-15 38-29 61-29 24 0 45 8 61 23 19 17 23 36 23 59 0 24-7 46-26 62m32-154c-50-46-130-46-179 0l-34 30-34-30c-49-46-130-46-179 0-56 51-56 134 0 185l213 196 213-196c56-51 56-134 0-185"> </path> <path id="techyscouts-logo-line-1" d="M803 372L1016 0l34 20-213 372-34-20z"> </path> <path id="techyscouts-logo-line-2" d="M879 552l-33-20 213-372 33 20-213 372z"></path> <path id="techyscouts-logo-text" d="M3491.171 318.855c11.336 52.417-38.612 83.584-85.725 83.584-36.132 0-80.058-20.542-84.308-60.563l-.355-2.48 5.668-.708.354 2.48c3.897 37.188 45.343 55.959 78.995 55.959 43.217 0 89.976-27.98 79.704-77.21-15.941-73.667-155.865-6.375-162.241-98.814-1.417-14.875 2.48-29.396 11.69-41.438 36.132-46.75 138.152-40.73 150.196 23.376l.355 2.833-5.314 1.062-.354-2.833c-2.126-10.27-6.376-19.125-13.461-26.917-15.232-16.292-39.675-23.021-61.992-22.667-23.38.354-49.947 8.854-64.825 28.334-8.856 10.98-12.044 24.083-10.981 37.896 6.376 86.772 145.591 18.771 162.594 98.106zm-254.34 82.168h-5.314V157.707h-85.725v-5.667h176.764v5.667h-85.725v243.316zm-198.366 1.77c-41.092 0-86.788-24.083-86.788-70.125V152.394h5.667v180.628c0 42.855 43.217 64.105 81.12 64.105 37.904 0 81.121-21.25 81.121-64.46V152.395h5.668v180.628c0 45.688-46.05 69.772-86.788 69.772zm-239.105.709c-34.715 0-66.596-14.167-89.267-37.542-22.672-23.021-37.195-54.897-37.195-89.96 0-35.063 14.523-66.938 37.195-89.96 22.67-23.375 54.552-37.542 89.267-37.542 35.07 0 66.597 14.167 89.622 37.542 22.671 23.022 37.195 54.897 37.195 89.96 0 35.063-14.524 66.939-37.195 89.96-23.025 23.375-54.552 37.542-89.622 37.542zm85.726-213.212c-21.963-22.312-52.427-36.125-85.726-36.125-33.298 0-63.408 13.813-85.37 36.125-21.61 21.959-35.425 52.064-35.425 85.71 0 33.646 13.816 63.75 35.424 85.71 21.963 22.312 52.073 36.125 85.371 36.125 33.299 0 63.763-13.813 85.726-36.125 21.608-21.96 35.07-52.064 35.07-85.71 0-33.646-13.462-63.751-35.07-85.71zM2544.67 394.648c31.882 0 60.93-13.459 81.83-35.063 9.564-9.917 17.711-21.25 23.379-34.355h6.022c-6.022 14.52-14.878 27.625-25.505 38.605-21.963 22.667-52.073 36.48-85.726 36.48-33.652 0-63.762-13.813-85.725-36.48-21.608-22.313-35.424-53.126-35.424-87.48 0-34.001 13.816-64.814 35.424-87.127 21.963-22.667 52.073-36.48 85.725-36.48 33.653 0 63.763 13.813 85.726 36.48 10.627 10.98 19.483 24.084 25.505 38.605h-6.022c-5.668-13.105-13.815-24.792-23.38-34.71-20.9-21.604-49.947-34.708-81.829-34.708-31.88 0-60.928 13.104-81.828 34.709-20.9 21.604-34.007 51-34.007 83.23 0 32.584 13.107 61.98 34.007 83.23 20.9 21.605 49.947 35.064 81.828 35.064zm-228.124 7.791c-36.132 0-80.058-20.542-84.309-60.563l-.354-2.48 5.668-.708.354 2.48c3.897 37.188 45.343 55.959 78.995 55.959 43.217 0 89.977-27.98 79.704-77.21-15.941-73.667-155.865-6.375-162.24-98.814-1.418-14.875 2.479-29.396 11.689-41.438 36.132-46.75 138.152-40.73 150.196 23.376l.355 2.833-5.314 1.062-.354-2.833c-2.126-10.27-6.376-19.125-13.461-26.917-15.232-16.292-39.675-23.021-61.992-22.667-23.38.354-49.947 8.854-64.825 28.334-8.856 10.98-12.044 24.083-10.981 37.896 6.376 86.772 145.591 18.771 162.594 98.106 11.336 52.417-38.611 83.584-85.725 83.584zm-182.426-2.479h-5.668V297.605l-91.039-145.211h6.73l87.143 139.544 87.143-139.544h6.73l-91.039 145.21V399.96zm-120.08-122.897h-155.51V399.96h-5.313V152.394h5.314V271.75h155.51V152.394h5.668V399.96h-5.668V277.063zm-298.26 117.585c31.881 0 60.929-13.459 81.829-35.063 9.564-9.917 17.711-21.25 23.38-34.355h6.021c-6.022 14.52-14.878 27.625-25.505 38.605-21.962 22.667-52.073 36.48-85.725 36.48-33.653 0-63.763-13.813-85.726-36.48-21.608-22.313-35.423-53.126-35.423-87.48 0-34.001 13.815-64.814 35.423-87.127 21.963-22.667 52.073-36.48 85.726-36.48 33.652 0 63.763 13.813 85.725 36.48 10.627 10.98 19.483 24.084 25.505 38.605h-6.022c-5.668-13.105-13.815-24.792-23.38-34.71-20.9-21.604-49.947-34.708-81.828-34.708-31.882 0-60.929 13.104-81.829 34.709-20.9 21.604-34.007 51-34.007 83.23 0 32.584 13.107 61.98 34.007 83.23 20.9 21.605 49.947 35.064 81.829 35.064zm-277.365 5.312V152.394h136.736v5.313h-131.068v115.46h128.234v5.666h-128.234v115.815h131.776v5.312h-137.444zm-106.975 1.063h-5.314V157.707h-85.725v-5.667h176.764v5.667h-85.725v243.316z" style="fill: none; stroke: #fff; stroke-width: 13;"></path> </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/js/all.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</html>
