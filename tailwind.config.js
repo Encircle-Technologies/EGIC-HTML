@@ -28,6 +28,9 @@ module.exports = {
                 200: '#404040',
             },
             purple: '#2709A9',
+            purple_light: '#20068F',
+            purple_dark: '#11005B',
+            puplr_dark_100: '#0E0048',
             yellow: '#CF7B1E',
             lightBlue: '#0A599E',
         },
@@ -125,9 +128,7 @@ module.exports = {
             40: '40px',
             50: '50px',
             55: '55px',
-
             80: '80px',
-
             '50_per': '50%',
             140: '140px',
             190: '190px',
@@ -202,6 +203,7 @@ module.exports = {
                 126: '126px',
                 heroHeight: 'calc(100vh - 206px)',
                 mobileHeight: 'calc(78vh - 186px)',
+                navbarHeight: 'calc(100vh - 120px)',
                 780: '780px',
             },
             screens: {

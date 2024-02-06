@@ -262,27 +262,38 @@
     }
 
     .navbar ul>li>a {
-        @apply relative flex flex-wrap m-0 p-0 text-16 leading-26 text-black-200 font-700 transition-all duration-500 ease-in-out ;
+        @apply relative flex flex-wrap m-0 p-0 text-16 leading-26 text-black-200 font-700 transition-all duration-500 ease-in-out py-[56px];
     }
-/* 
-    .navbar ul>li>a:after {
-        content: "";
-        @apply absolute bottom-0 right-0 w-0 h-[1px] bg-yellow duration-300 delay-150 ease-linear;
-    } */
 
     .navbar ul>li>a:hover {
         @apply text-lightBlue;
     }
 
-    /* .navbar ul>li>a:hover:after {
-        @apply w-full left-0;
-    } */
-
     header.is-sticky {
-        animation: smoothScroll 1s forwards;
+        animation: stickyslide 1s forwards;
         z-index: 1030;
-        @apply fixed top-0 bg-White;
+        @apply fixed top-0 bg-White left-0 right-0;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 500ms;
     }
+
+    .header.is-sticky .top-bar {
+        @apply hidden;
+    }
+
+    @keyframes stickyslide {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0.7;
+        }
+        
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
 
     .search-bar.active {
         @apply block;
@@ -306,37 +317,7 @@
         @apply fill-yellow transition-all duration-300 ease-linear;
     }
 
-    .navbar-toggler span {
-        @apply w-20 h-4 bg-lightBlue block rounded-20;
-    }
-
-    .navbar.active {
-        @apply absolute !flex w-full left-0 top-[100%] flex-col h-mobileHeight;
-    }
-
-    .navbar ul>li .submenu-button {
-        @apply lg:hidden;
-    }
-
-    .navbar.active .mobile-menu-main {
-        @apply w-full bg-purple-gradient text-White h-full;  
-    }
-
-    .navbar.active ul {
-        @apply flex-col w-full items-start px-30 pt-[25px];
-    }
-
-    .navbar.active ul>li>a {
-        @apply text-White;
-    }
-
-    .navbar.navbar.active .mobile-search-bar {
-        @apply block;
-    }
-
-    .close-search-bar {
-
-    }
+   
 
     /* header mega menu */
     .megamenu-main {
@@ -354,11 +335,84 @@
     }
 
     header ul.sub-menu { 
-        @apply absolute left-0 hidden float-left w-full max-w-full m-0 text-left list-none border-0 rounded-none top-[100%] z-9999 bg-purple; 
+        @apply absolute hidden left-0 float-left w-full max-w-full m-0 text-left list-none border-0 rounded-none top-[100%] z-9999 bg-purple; 
     } 
 
     header .header-navbar ul li:hover .sub-menu {
         @apply flex;
+    }
+
+    li.sub-menu-open ul.sub-menu {
+        display:flex !important;
+    }
+
+    .megamenu-tab--list ul>li>a {
+        @apply p-0 py-0;
+    }
+
+    .megamenu-tab--list .tabs .tab-link {
+        @apply bg-purple_dark cursor-pointer;
+    }
+    
+    .megamenu-tab--list .tabs .tab-link:hover,
+    .megamenu-tab--list .tabs .tab-link.current {
+        @apply bg-purple_light;
+    }
+
+    .megamenu-tab--list .tabs .tab-link a:hover {
+        @apply text-White;
+    }
+
+    .megamenu-tab--list {
+        @apply bg-puplr_dark_100;
+    }
+
+    .submenu__item--box ul li a,
+    .megamenu-main__inner ul li a {
+        @apply text-16 leading-26 text-White;
+    }
+
+    .megamenu-tab--content .megamenu-menu-items ul li a {
+        @apply py-0;
+    }
+
+    .megamenu-tab--content ul li {
+        @apply mb-[28px];
+    }
+
+    .megamenu-tab--list .tab-link {
+        @apply py-40 px-80;
+    }
+
+    .submenu__item--box ul li a:hover,
+    .megamenu-menu-items ul li a:hover {
+        @apply text-White opacity-50;
+    }
+
+
+
+    .submenu__item--box {
+        @apply max-w-[712px] w-full !ml-auto !mr-auto;
+    }
+    
+    .submenu__item--box ul {
+        @apply flex items-center justify-between w-full;
+    }
+
+    .mega-small-menu {
+        @apply !bg-purple-gradient;
+    }
+
+    .megamenu-tab--content {
+        @apply py-40 px-80;
+    }
+
+    .megamenu-tab--content .row {
+        @apply flex;
+    }
+
+    .megamenu-menu {
+        @apply pr-30;
     }
     /* header mega menu */
 
@@ -439,6 +493,11 @@
     }
 
     /* map section */
+
+    .country-link {
+        @apply z-9;
+    }
+
     .country-link a::after {
         content: "";
         @apply absolute right-[-28px] top-[7px] bg-[url('../../images/right-arrow.svg')] w-20 h-[17px] bg-no-repeat transition-all duration-300 ease-linear;
@@ -483,7 +542,7 @@
     }
 
     .country-part.oman {
-        @apply top-50_per left-50_per translate-x-[246%] translate-y-[23%] mdscreen:translate-x-[93%] mdscreen:translate-y-[27%];
+        @apply top-50_per left-50_per translate-x-[246%] translate-y-[23%] mdscreen:translate-x-[93%] mdscreen:translate-y-[27%] z-1;
     }
 
     .country-part.qatar {
@@ -517,39 +576,39 @@
 
 /* responsive */
 
-@screen lgscreen {
-.navbar {
-    @apply bg- overflow-y-auto overflow-x-hidden h-[calc(100vh_-_175px)] w-full left-0 px-0 absolute top-[100%] duration-300 ease-linear delay-150 max-w-none;
+@screen xlscreen {
+    .navbar {
+        @apply bg-White overflow-y-auto overflow-x-hidden h-[calc(100vh_-_175px)] w-full left-0 px-0 absolute top-[100%] duration-300 ease-linear delay-150 max-w-none;
     }
     .navbar {
     @apply hidden;
     }
     .header .navbar.active {
-    @apply block;
+        @apply block;
     }
     .header #menu-main-menu {
-    @apply w-full m-0 p-0 mb-[15px] relative h-auto mt-20;
+        @apply w-full m-0 p-0 mb-[15px] relative h-auto mt-20;
     }
     header.header .navbar ul li ul.sub-menu {
-    @apply py-0 px-0 text-left relative top-0 flex-col bg-Green_23 w-full gap-0 order-3 hidden z-1 rounded-[0px];
-    transform: inherit;
+        @apply py-0 px-0 text-left relative top-0 flex-col bg-purple w-full gap-[0px] order-3 hidden z-1 rounded-[0px] mt-10;
+        transform: inherit;
     }
     .navbar ul li:hover ul.sub-menu {
-    @apply hidden;
+        @apply hidden;
     }
     .navbar ul > li:hover > ul.sub-menu.open,
     header.header .navbar ul li ul.sub-menu.open {
-    @apply flex opacity-100 visible px-30 py-15 gap-y-7 drop-shadow-none;
+        @apply flex opacity-100 visible gap-y-[7px];
     }
     .navbar ul > li {
-    @apply w-full
+        @apply w-full
     }
     .navbar ul > li.has-sub {
-    @apply justify-between items-center mb-0 w-full;
+        @apply justify-between items-center mb-0 w-full;
     }
     .navbar ul>li>a,
     header.is-sticky .navbar ul > li > a {
-    @apply order-1 text-16 leading-26 py-15 px-30 text-White;
+        @apply order-1 text-16 leading-26 py-[15px] px-30 text-White;
     }
     .navbar ul>li>a:hover,
     .navbar ul>li:hover>a,
@@ -559,48 +618,160 @@
     header.is-sticky .navbar ul li.current-menu-item>a
     header.header .navbar ul li.current-menu-parent>a,
     header.header .navbar ul li.current-menu-item>a {
-    @apply text-Green_22;
+        @apply text-White;
     }
     .navbar ul > li > ul.sub-menu li.current-menu-item a,
     .navbar ul > li > ul.sub-menu li a:hover {
-    @apply text-Green_2;
+        @apply text-White;
     }
     .navbar ul > li > .submenu-button {
-    @apply order-2 block leading-0 p-10 mx-20 cursor-pointer;
+        @apply order-2 block p-10 mx-20 cursor-pointer;
     }
     .navbar ul > li > .submenu-button.submenu-opened svg {
-    @apply rotate-180;
+        @apply rotate-[180deg];
     }
     .navbar ul > li:first-child > ul.sub-menu li:first-child {
     @apply ml-0;
     }
     header.header .navbar-toggler span {
-    @apply bg-White rounded-25 h-[3px] w-[15px] transition-all duration-300 delay-150 ease-linear;
+        @apply w-20 h-4 bg-lightBlue block rounded-20 transition-all duration-300 delay-150 ease-linear; 
     }
     header.header .navbar-toggler:hover span {
-    @apply bg-Green_2;
+        @apply bg-yellow;
     }
     header.is-sticky .navbar-toggler span {
-    @apply bg-White
+        @apply bg-lightBlue;
     }
     header.header .navbar-toggler.menu-opened {
-    @apply gap-y-[0px];
+        @apply gap-y-[0px];
     }
     .header-bottom .btn-custom ul {
-    @apply flex-col;
+        @apply flex-col;
     }
     .header-bottom .btn-custom ul li {
-    @apply w-auto
+        @apply w-auto;
     }
     .header-bottom .btn-custom ul li a:hover {
-    @apply text-Green_22;
+        @apply text-yellow;
     }
     .header-bottom .btn-custom ul li a:hover svg {
-    @apply fill-Green_22;
+        @apply fill-White;
     }
     .header-bottom .btn-custom ul li a.btn-search:hover svg {
-    @apply fill-Green_2;
-}
+        @apply fill-White;
+    }
+
+    .navbar.active {
+        @apply absolute !flex w-full left-0 top-[100%] flex-col h-navbarHeight bg-purple-gradient;
+    }
+
+    .navbar.active .mobile-menu-main {
+        @apply w-full text-White;  
+    }
+
+    .navbar.active ul {
+        @apply flex-col w-full items-start px-0 pt-20 pb-20; 
+    }
+
+    .navbar.navbar.active .mobile-search-bar {
+        @apply block;
+    }
+
+    .navbar ul>li>a {
+        @apply py-0;
+    }
+
+    .megamenu-tab {
+        @apply flex flex-col;
+    }
+
+    .megamenu-tab--list {
+        @apply bg-purple_dark;
+    }
+
+    .megamenu-tab--list .tabs .tab-link:hover, .megamenu-tab--list .tabs .tab-link.current {
+        @apply bg-transparent;
+    }
+
+    .megamenu-tab--list .tabs .tab-link {
+        @apply p-0;
+    }
+
+    .megamenu-menu__title ,
+    .megamenu-content-image {
+        @apply hidden;
+    }
+    
+    .navbar ul>li {
+        @apply !px-0;
+    }
+
+    .megamenu-tab--content {
+        @apply p-0;
+    }
+
+    .megamenu-tab--content {
+        @apply bg-purple_dark;
+    }
+
+    .megamenu-menu-items {
+        @apply pl-[48px];
+    }
+
+    .navbar.active ul>li>a {
+        @apply p-0 pl-[30px] text-White;
+    }
+
+    .navbar ul > li > .submenu-button {
+        @apply m-0 p-0 pr-[23px];
+    }
+
+    .megamenu-menu-items ul li a {
+        @apply !p-0;
+    }
+
+    .tab-link img {
+        @apply pr-20 hidden;
+    }
+
+    .megamenu-menu-items ul li a {
+        @apply font-400;
+    }
+
+    .megamenu-tab--list ul .tab-link a {
+        @apply !pb-10;
+    }
+
+    .megamenu-menu-items ul {
+        @apply !pt-0 !pb-0;
+    }
+
+    .tabs {
+        @apply !pb-0;
+    }
+
+    .megamenu-tab--content ul li {
+        @apply mb-[18px];
+    }
+
+    .megamenu-menu {
+        @apply pr-0;
+    }
+
+    .mega-small-menu .submenu__item--box {
+        @apply max-w-[100%] bg-purple_dark;
+    }
+
+    .mega-small-menu .submenu__item--box li {
+        @apply mb-10;
+    }
+
+    .submenu__item--box ul li a {
+        @apply pb-0 pt-0;
+    }
+    .header.is-sticky .logo a {
+        @apply p-[18px];
+    }
 }
 
 @screen mdscreen {

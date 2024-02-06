@@ -1,14 +1,14 @@
 
 $(document).ready(function ($) {
-
+    
     // Sticky Header
-    // $(window).scroll(function () {
-    //     if ($(window).scrollTop() >= 300) {
-    //         $('.header').addClass('is-sticky');
-    //     } else {
-    //         $('.header').removeClass('is-sticky');
-    //     }
-    // });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 300) {
+            $('.header').addClass('is-sticky');
+        } else {
+            $('.header').removeClass('is-sticky');
+        }
+    });
 
 
     // menumaker
@@ -69,6 +69,20 @@ $(document).ready(function ($) {
             },
             
             });
+    }
+
+    // Tab
+    if ($('.tab-wrapper').length) {
+        $(document).ready(function () {
+            $('ul.tabs li').on('click', function () {
+                var tab_id = $(this).attr('data-tab');
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        });
     }
     
 });
